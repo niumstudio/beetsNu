@@ -1,0 +1,519 @@
+//core layout
+body footer
+    //border-top: 1px solid blackAlp50
+@media ttrigger  
+    body > header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        padding: padXXS padXXS
+        width:100%
+        //border-top: 1px solid whiteAlp50
+    body > footer
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        width: 100%
+        padding:  padXL marXL padXL marXL
+        column-gap: 5vw
+    body > footer > div
+        flex: 1 1 45%
+    body > header.fixed
+        min-height: navHeightL
+        position: absolute
+        z-index: 2000
+        //background-color: whiteAlp25
+    body > header.sticky
+        min-height: navHeight
+        position: fixed
+        z-index: 20000
+        padding: padXXS padM
+        display: none
+        background-color: blackAlp50
+    body > header > *
+        margin-left: marStd*1.5
+        margin-right: marStd*1.5
+   
+body > footer
+    color: whire
+    @media phoneRule
+        text-align: center
+    @media mtrigger
+        padding: padXL
+body > footer img.logo
+    width: 150px
+    @media phoneRule
+        margin: 2em auto 1em auto
+    @media ttrigger
+        display: inline-block
+
+.picturefill-background
+    overflow hidden
+    background-size: cover
+    background-position: 50% 50%
+.picturefill-background.containMob
+    @media mtrigger
+        background-size: contain
+        background-position: 50% 0
+        
+
+
+
+// content
+div.contentHdr,    
+div.content
+    width: 100%
+    height: 100%
+div.contentHdr
+    position: relative
+    z-index: 2    
+div.content > section > div
+    padding: padM padXL padM padXL
+*.pullUp div.content > section > div
+    padding-top: 0
+*.inset div.content
+    justify-content: center
+*.inset div.content > section > div
+    padding: padM
+    padding-right: padL   
+*.fullH
+    min-height: fullH
+    display: flex
+    @media mtrigger
+        min-height: fullH - navHeight
+*.largeH
+    min-height: largeH
+*.halfH
+    min-height: halfH
+*.smallH
+    min-height: smallH  
+.largeH div.content > section > div
+    padding-top: padXL*0.5
+    padding-bottom: padXL*0.5
+.halfH div.content > section > div
+    padding-top: padXL*0.3
+    padding-bottom: padXL*0.3
+.smallH div.content > section > div
+    padding-top: padXL*0.2
+    padding-bottom: padXL*0.2
+
+
+
+
+
+// layout mods
+@media dtrigger    
+    .rC    
+        justify-content: center
+    .rE    
+        justify-content: flex-end    
+    .cC    
+        align-items: center 
+    .cE    
+        align-items: flex-end        
+    .tC
+        text-align: center
+    .tR
+        text-align: right   
+
+
+
+
+
+
+
+
+
+
+
+// mobile nav
+.navHeight
+    height: navSpacer
+    @media tabletRule
+        height: navHeight
+
+#navMobile
+    position: fixed
+    bottom: marStd
+    right: marStd
+    z-index: 6000
+    display: none
+#navHeader
+    position: fixed
+    z-index: 7000
+    background-color: blackAlp50
+    //border-bottom:1px solid halfDark
+    width:100vw
+    padding-left: padM*2
+    padding-right: padM 
+    display: flex
+    align-items: center
+    justify-content: space-between
+#navHeader div#mblNavControl
+    display: flex 
+#navHeader div#mblNavControl a
+    margin-left: marXS    
+div.mblnav
+    display: none;
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 6001
+    background-color: white
+div.mblnavContainer
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    /* The main point: */
+    overflow-y: auto
+    /* Optional but highly reccomended: enables momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch
+    background-color: brand0
+.open
+    opacity: 1 !important
+div.containMNav
+    padding: padXL padXL
+div.containMNav > *
+    margin-bottom: marXL
+div.containMNav nav
+    display: flex
+    flex-direction: column
+div.containMNav nav a
+    padding: padM*1.5 padM 
+    line-height: 130%
+    margin: 1px 0
+    //background-color: rgba(0,0,0,0.05)
+    border-bottom: 2px solid brand5
+    @media tabletRule
+        padding: padM
+div.containMNav a:link,
+div.containMNav a:visited
+    color: brand5 !important
+
+div.containMNav h6
+    font-size: 1em
+    margin-top: marStd
+    margin-bottom: marL
+@media mtrigger
+    html.noscroll 
+        overflow: hidden 
+    body.noscroll
+        overflow: visible
+        height: 100%
+
+
+
+// featurette main body
+main.featurette b.highlight
+    background-color:brand2
+    color:white
+    padding-left: 0.2em
+    padding-right:0.2em
+main.featurette
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: 100% auto
+    background-attachment: scroll
+    background-image: url(/images/cases/covid-safety/hero/xl.jpg)
+@media mtrigger
+    main.featurette
+        background-attachment: scroll
+main.featurette article
+    margin-top: 0
+    margin-bottom: 0px
+main.featurette header
+    margin-bottom: marL 
+main.featurette article:last-child
+    border-bottom: none
+    margin-top: marL
+@media mtrigger
+    main.featurette div.picturefill-background div.content
+        background:none
+    main.featurette div.picturefill-background section > div
+        background-repeat: no-repeat
+        background-position: -5% 105%
+        background-size: auto 30%
+        min-height: 70vh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        padding-right: 5vw !important
+        color: brand1
+@media ttrigger    
+    main.featurette div.picturefill-background section > div
+        background-repeat: no-repeat
+        background-position: -2vw 50%
+        background-size: auto 90%
+        min-height: 40vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: padM padXL padM padXL*2
+    main.featurette article div.content section 
+        flex-basis: 60%
+
+
+
+
+
+
+
+
+a.itemLink:link, a.itemLink:visited  
+    transition: 0.35s
+    color: brand3
+    display: block
+@media (pointer: fine)
+    a.itemLink:hover
+        transform: scale(103%)
+
+a.itemLink span.thumbVid
+    display: flex
+    justify-content: center
+    margin-bottom: marXS
+    padding: padM*1.25
+    background-size: cover
+    background-repeat: no-repeat
+    @media phoneRule
+        height: 50vw
+        margin-bottom: marL
+    @media tabletRule
+        height: 25vw
+        margin-bottom: marM
+
+a.itemLink span.thumbVid-large
+    display: flex
+    justify-content: center
+    margin-bottom: marXS
+    padding: padM*1.25
+    background-size: cover
+    background-repeat: no-repeat
+    height: 30vw
+    @media phoneRule
+        height: 50vw
+        margin-bottom: marL
+    @media tabletRule
+        height: 50vw
+        margin-bottom: marM
+   
+
+a.itemLink span i 
+    font-size:6em
+    color: whiteAlp75
+    align-self: center
+
+
+
+
+div.insetContent
+    width:100%
+    display: flex
+    background-repeat: no-repeat
+    background-size: 101% auto
+    @media dtrigger
+        padding: padXL marXL padXL marXL
+div.insetContent2
+    @media dtrigger
+        padding: padXL marXL padXL*1.5 marXL
+div.insetContent > div
+    position: relative
+div.innerContent
+    z-index: 200
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    @media phoneRule
+        display: block
+        text-align: center
+    @media ttrigger
+        column-gap: 5vw
+        justify-content: space-between
+div.innerContent > section
+        flex-basis: 100%
+        
+ div.innerContent > section:first-of-type  
+    @media phoneRule
+        margin-bottom: 3em 
+div.innerContent > section.vw45
+    @media dtrigger
+        flex: 1 1 45%
+        flex-wrap: nowrap
+    @media lgdesktopRule
+        flex: 1 1 40%
+div.innerContent > section.vw40
+    @media dtrigger
+        flex: 0 0 40%
+section.centre
+    text-align: center
+div.innerContent.gallery
+    @media dtrigger
+        flex-wrap: nowrap
+div.innerContent.gallery > section:first-of-type
+    @media mtrigger
+        margin-bottom: 5vh
+    @media dtrigger
+        flex: 1 1 30%
+div.innerContent.gallery > section:last-of-type
+    @media mtrigger
+        flex-basis: 100%
+    @media dtrigger
+        flex: 1 1 auto
+
+
+
+@media ttrigger
+    div.innerContent.flip
+        flex-direction: row-reverse
+    div.gridItems
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-between
+        column-gap: marM
+        row-gap: marM
+        flex: 1 1 auto
+    div.gridItems div.item
+        flex-basis: 44%
+@media mtrigger
+     div.gridItems div.item
+        margin-bottom: marXL    
+
+
+main div.container
+    //background-color: white
+main div.sec1 div.container
+    //background-color: rgba(0,0,0,0.0)
+
+
+div.sec2 div.container
+    background-color: brand1
+    margin-top: -1px
+div.sec3 div.container
+    background-color: brand1
+div.sec4
+    //background-color: sec4mid
+div.sec6
+    background-color: sec3base
+    color: white
+
+/*
+div.sec1 h1,
+div.sec1 h2,
+div.sec1 h3,
+div.sec1 h4,
+div.sec1 h5,
+div.sec1 h6,
+div.sec1 p,
+div.sec1 a
+    color: brand2
+
+div.sec1 h4
+    max-width: 90%
+
+
+div.sec2 h1,
+div.sec2 h2,
+div.sec2 h3,
+div.sec2 h4,
+div.sec2 h5,
+div.sec2 h6
+    color: brand0
+
+
+div.sec3 h1,
+div.sec3 h2,
+div.sec3 h3,
+div.sec3 h4,
+div.sec3 h5,
+div.sec3 h6
+    color: brand1
+  
+div.sec3 h4
+    color: white
+    opacity: 0.4
+    //max-width: 80%
+
+div.sec4 h1,
+div.sec4 h2,
+div.sec4 h3,
+div.sec4 h4,
+div.sec4 h5,
+div.sec4 h6
+    color: brand0
+
+div.sec4 h5
+    color: brand1
+
+div.sec5 h1,
+div.sec5 h2,
+div.sec5 h3,
+div.sec5 h4,
+div.sec5 h5,
+div.sec5 h6
+    color: brand0
+
+div.sec5 h4
+    color: brand1
+
+div.sec6 h1,
+div.sec6 h2,
+div.sec6 h3,
+div.sec6 h4,
+div.sec6 h5,
+div.sec6 h6
+    color: brand1
+  
+div.sec6 h4
+    color: white
+    opacity: 0.4
+    //max-width: 80%
+*/
+
+@media mtrigger
+    div.inpage-content .innerContent
+        padding: 0 padXL*1.1 padXL*2 padXL*1.1
+        padding-top: navSpacer * 1.25
+        //text-align: center
+
+div.sec1 div.insetContent
+    background-image: url(/images/bgs/openingOverlay.webp)
+    @media phoneRule
+        background-image: url(/images/bgs/openingOverlay-m.webp)
+
+div.sec3
+    //background-image: url(/images/art/flow1@1.5x.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 50% 85%
+
+
+
+
+
+.container 
+    position: relative
+.base
+    position: absolute
+    width: 100%
+    height: 100%
+    @media dtrigger
+        //position: fixed
+
+
+
+// mobile
+@media mtrigger
+    div.insetContent,
+    div.insetContent2
+        padding: padXL*2 marXL padXL*2 marXL
+
+// large desktop
+@media lgdesktopRule
+    main > div:not(.base) div.innerContent
+        max-width: 2000px
+        margin: 0px auto

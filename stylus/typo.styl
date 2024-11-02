@@ -1,0 +1,374 @@
+// typo defaults
+a:link, a:visited
+    color: brand1
+    text-decoration: none
+p a:link,
+p a:visited,
+li a:link,
+li a:visited
+    text-decoration: underline
+
+#navHeader a:link, #navHeader a:visited
+    color: brand5
+
+.activeLink
+    font-weight: 600 !important
+
+// custom typo
+ul
+    margin-bottom: 2em
+    padding-left: 0
+    padding-right: 0
+
+ul li
+    font-size: 1.1em
+    line-height: 1.4em
+    margin-bottom: 0em
+    list-style-type: none
+    padding-bottom: 1.1em
+    padding-top: 1em
+    padding-right: 1em
+    border-bottom: 1px solid brand2
+ul li:last-child
+    border-bottom: none
+/*ul li:first-child
+    padding-top: 0*/
+ul.light li
+    border-bottom: 1px solid whiteAlp50
+ul p
+    margin-bottom: 0
+    margin-top: 0
+
+.reverse ul
+    border-top: 1px solid brand1
+    border-bottom: 1px solid brand1
+    @media phoneRule
+        width: 100%
+
+.reverse li
+    color: brand4
+    border-bottom: 1px solid brand1
+    
+    
+.reverse li strong 
+    color: white
+.reverse .galleryElement ul,
+.reverse .galleryElement li
+    border:none
+
+
+ ul.simpleGrid
+    border:none
+.simpleGrid li
+    font-size: 1.2em
+    line-height: 1.3em
+
+
+// picturefill-bg and image teaser
+*.picturefill-background a
+    color: brand1 
+@media ttrigger
+    *.picturefill-background.lighten1,
+    *.picturefill-background.lighten1 a,
+    *.picturefill-background.lighten2,
+    *.picturefill-background.lighten2 a
+    *.picturefill-background.darktext,
+    *.picturefill-background.darktext a
+        color: blackAlp50
+    *.picturefill-background.lighttext,
+    *.picturefill-background.lighttext a
+        color: white      
+*.picturefill-background a
+    //text-decoration: underline
+
+
+
+.activeLink, 
+nav a:hover,
+p a:hover,
+li a:hover,
+*.picturefill-background a:hover
+    color: brand2 !important
+    transition: 300ms
+/*.activeLink,
+nav a:hover
+    border-bottom-color: white !important
+*/
+
+// nav typo
+nav > *
+    font-weight:400 !important
+    padding: padXXS*0.9 padXXS
+    transition: 0.5s
+    @media dtrigger
+        font-size:1.1em
+
+/* dark slider nav */    
+body.darkSlider > header.fixed .siteLogo span,
+body.darkSlider > header.fixed nav a.activeLink,
+body.darkSlider > header.fixed nav a.activeLink:hover
+    color: white !important
+    border-bottom: 3px solid white !important
+body.darkSlider > header.fixed nav a,
+body.darkSlider > header.fixed nav a.ctaButton
+    color: brand2 !important
+    border-bottom: 3px solid rgba(0,0,0,0) !important
+body.darkSlider > header.fixed nav a:not(.icon):hover
+    color: brand2 !important
+    border-bottom: 3px solid brand2 !important
+
+/* light slider nav */    
+body.lightSlider > header.fixed .siteLogo span,
+body.lightSlider > header.fixed nav a.activeLink
+    color: brand2 !important
+body.lightSlider > header.fixed nav a,
+body.lightSlider > header.fixed nav a.ctaButton
+    color: brand1 !important
+    border-color: brand1 !important
+body.lightSlider > header.fixed nav a:hover
+    color: brand2 !important
+    border-color: brand1 !important
+    
+/* dark theme navs */ 
+body.darkTheme > header.sticky .siteLogo span,
+body.darkTheme > header.sticky nav a.activeLink,
+body.darkTheme > header.sticky nav a.activeLink:hover
+    color: white !important
+    //border-bottom: 3px solid white !important
+body.darkTheme > header.sticky nav a,
+body.darkTheme > header.sticky nav a.ctaButton
+    font-size: 1.1em
+    color: brand2 !important
+    //border-bottom: 3px solid rgba(0,0,0,0) !important 
+body.darkTheme > header.sticky nav a:hover
+    color: brand2 !important
+    //border-bottom: 3px solid brand2 !important
+
+
+/* light theme navs */
+body.lightTheme > header.sticky .siteLogo span,
+body.lightTheme > header.sticky nav a.activeLink
+    color: brand0 !important
+body.lightTheme > header.sticky nav a,
+body.lightTheme > header.sticky nav a.ctaButton
+    color: brand1 !important
+    border-color: brand1 !important    
+body.lightTheme > header.sticky nav a:hover
+    color: brand0 !important
+    border-color: brand0 !important
+
+
+header.fixed nav
+    display: flex
+    column-gap: 0.5em
+
+
+h1, h2, h3, h4 ,h5, h6
+    margin: 0
+    margin-bottom: marXXS
+
+// defaults   
+h1
+    font-weight: 600
+    font-size: 4.8em
+    line-height: 1.05em
+    letter-spacing: -0.01em
+    
+h2
+    font-weight: 600
+    font-size: 3.5em
+    line-height: 1.05em
+    letter-spacing: -0.01em 
+        
+h3
+    font-weight: 300
+    font-size: 2.2em
+    line-height: 115%
+    letter-spacing: 0.02em 
+h4
+    font-weight: 300
+    font-size: 1.6em
+    line-height: 130%
+    //letter-spacing: -0.01em
+h4 span
+    font-weight: 400    
+h5
+    font-weight: 300
+    font-size: 1.5em
+    line-height: 125%
+    margin-bottom: 0
+    //max-width:90%
+    //letter-spacing: -0.02em
+h5 span
+    font-weight: 400
+    //letter-spacing: -0.01em      
+h6
+    font-weight: 500
+    font-size:0.9em
+    line-height: 130%
+    max-width:90%
+    //letter-spacing: -0.015em
+p
+    font-weight: 400
+    font-size: 1.2em
+    line-height: 1.4em
+    //letter-spacing: -0.025em
+    margin-top: 0em
+strong 
+    font-weight: 600
+    //letter-spacing: -0.015em
+
+// modify typo
+.small
+    font-size: 0.95em    
+
+
+
+// footer
+body > footer
+    //font-size: 0.9em
+    //ine-height: 1.4em
+body > footer p
+    font-size: 0.9em
+    line-height: 160%    
+body > footer h6
+    font-weight: 700
+    font-size:1em
+    line-height: 120%
+    color: brand2
+body > footer nav 
+    display: flex
+    flex-direction: column
+body > footer a
+    color: white !important 
+    @media phoneRule
+        margin: 0.5em
+body > footer a.activeLink
+    color: brand0 !important 
+    @media dtrigger
+        border-left: 3px solid brand0
+        margin-left: padXXS*1.15
+
+@media phoneRule
+    h1
+        font-size: 2.4em   
+        line-height: 105%
+    *.picturefill-background h1
+        font-size: 2.4em   
+        line-height: 105%    
+    h2
+        font-size: 2em
+        line-height: 110%
+        //width:85%
+    h3
+        font-size: 1.9em
+        line-height: 110%
+    h4
+        font-weight: 600
+        font-size: 1.2em
+        line-height: 120%
+    h5
+        font-size: 1.2em
+        line-height: 110%
+    h6
+        font-size: 0.9em
+        line-height: 110%
+
+    p
+        font-size: 1em
+    h1, h2, h3, h4, h5, h6, p
+        margin-bottom: 0.25em;
+
+
+@media tabletRule
+    h1
+        font-size: 3.6em
+    h2
+        font-size: 3.2em
+
+a.siteLogo:hover
+    cursor: pointer
+
+
+
+
+
+@media ttrigger 
+    .secTitle
+        font-size: 7em
+        font-weight: 650
+        letter-spacing: -0.045em
+        text-indent: -0.08em
+        color:brand1
+
+.darkSlide p
+    color: white
+
+
+p.intro
+    width auto
+    @media dtrigger
+        width:80%
+
+
+div.sec2 a.extLink:link, 
+div.sec2 a.extLink:visited
+    color: sec2darker
+    text-decoration: none
+
+div.sec3 a.extLink:link, 
+div.sec3 a.extLink:visited
+    color: sec3darker
+    text-decoration: none
+
+div.sec4 a.extLink:link, 
+div.sec4 a.extLink:visited
+    color: sec4darker
+    text-decoration: none
+
+
+.reverse
+    color: white
+.reverse a:not(.ctaButton)
+    color: white
+    text-decoration: underline
+
+
+
+
+
+
+
+//text effects 
+.responsiveLarge
+    font-size: 7.5vw
+    line-height: 95%
+    letter-spacing: -0.3vw
+    @media phoneRule
+        font-size:6.5vh
+        line-height: 110%
+    @media lgdesktopRule
+        font-size:5vw
+.responsiveLarge .outline
+    letter-spacing: -0.2vw
+.outline
+    -webkit-text-stroke: 1.25px
+    -webkit-text-fill-color: rgba(0,0,0,0)
+.strokeBrand0
+    -webkit-text-stroke-color: brand0
+.strokeBrand1
+    -webkit-text-stroke-color: brand1
+.strokeBrand2
+    -webkit-text-stroke-color: brand2
+.strokeBrand3
+    -webkit-text-stroke-color: brand3
+.strokeBrand4
+    -webkit-text-stroke-color: brand4
+.strokeBrand5
+    -webkit-text-stroke-color: brand5
+.strokeBrand6
+    -webkit-text-stroke-color: brand6
+
+@media ttrigger
+    .restrictWidth
+        max-width: 60%

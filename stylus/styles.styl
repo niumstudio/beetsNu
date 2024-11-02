@@ -1,0 +1,265 @@
+/*!
+* generated using stylus - don't alter
+*/
+
+// libs and default 3rd party
+@import 'nib'
+// setup
+@import '../fonts/satoshi/satoshiCustom.css'
+
+@require 'defaults.styl'
+// block, nav etc
+@require 'layout.styl'
+// custom elements, icons
+@require 'elements.styl'
+// typography, links
+@require 'typo.styl'
+// typography, links
+@import '../css/form.css'
+
+
+
+
+
+/* effects */
+.multiply
+    background-blend-mode: multiply
+.softlight
+    background-blend-mode: soft-light
+    /*background-color: blackAlp25*/
+.bgoverlay0
+    background-color: blackAlp10 !important
+.bgoverlay1
+    background-color: blackAlp25 !important
+.bgoverlay2
+    background-color: blackAlp50 !important
+.bgoverlay3
+    background-color: blackAlp75 !important
+
+.multiplyBlack
+    background-color: brand1
+.multiplyRed
+    background-color: brand2
+
+.lighten1
+    background-color: rgba(255,255,255,0.70)
+    background-blend-mode: overlay
+    filter:grayscale(80%)
+.lighten2
+    background-color: rgba(255,255,255,0.50)
+    background-blend-mode: overlay
+    filter:grayscale(80%)
+.greyscale
+    background-color: rgba(0,0,0,0.30)
+    filter:grayscale(100%)
+    transition: 1s
+.greyscaleLt
+    filter:grayscale(0%)
+    transition: 2.5s
+
+
+.burnColor
+    background-blend-mode: color-burn
+    opacity: 1.0
+.gradient
+    background-blend-mode: multiply
+    background: linear-gradient(to bottom, brand2Alp50, blackAlp50) 
+.gradient0
+    background-blend-mode: multiply
+    background: linear-gradient(to top, blackAlp5, rgba(255,255,255,0.0)) 
+
+.gradient2
+    background-blend-mode: multiply
+    background: linear-gradient(to left top, black ,blackAlp50, blackAlp10)
+    @media phoneRule
+        background: brand6  
+.gradient3
+    background-blend-mode: multiply
+    background: radial-gradient(circle at center, blackAlp5,blackAlp5,blackAlp5,blackAlp10, blackAlp25 )
+    @media phoneRule
+        background: brand0
+.gradient4
+    background-blend-mode: multiply
+    background: linear-gradient(120deg, brand0, brand1, brand6)
+.gradient5
+    background-blend-mode: multiply
+    background: linear-gradient(to top right, blackAlp90, blackAlp75 50%, blackAlp50)   
+.gradient1
+    background-blend-mode: multiply
+    background: linear-gradient(to top, black 5%, brand0) 
+    @media phoneRule
+        background: brand0  
+.gradient7
+    background-blend-mode: multiply
+    background: linear-gradient(to top,brand6, brand0)  
+    @media phoneRule
+        background: brand0 
+
+.gradientsec2
+    //background-blend-mode: multiply
+    background: linear-gradient(to right, 
+        rgba(8,6,31,1.0), 
+        rgba(8,6,31,1.0) 5%, 
+        rgba(8,6,31,0) 35%, 
+        rgba(8,6,31,0) 65%, 
+        rgba(8,6,31,1.0) 95%, 
+        rgba(8,6,31,1.0)
+    )
+    @media phoneRule
+        background: brand1
+.gradientsec3
+    background-blend-mode: multiply
+    background: linear-gradient(to bottom, whiteAlp07, rgba(0,0,0,0.0) )
+.gradientsec4
+    background-blend-mode: multiply
+    background: linear-gradient(120deg,sec4darker, blackAlp10, blackAlp5, blackAlp5 )
+.gradientsec4-alt
+    background-blend-mode: multiply
+    background: linear-gradient(220deg,sec4darker, blackAlp10, blackAlp5, blackAlp5 )
+
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 5px, 6px 100%;
+  pointer-events: none;
+}
+
+
+
+/*
+
+@keyframes flicker {
+  0% {
+  opacity: 0.27861;
+  }
+  5% {
+  opacity: 0.34769;
+  }
+  10% {
+  opacity: 0.23604;
+  }
+  15% {
+  opacity: 0.90626;
+  }
+  20% {
+  opacity: 0.18128;
+  }
+  25% {
+  opacity: 0.83891;
+  }
+  30% {
+  opacity: 0.65583;
+  }
+  35% {
+  opacity: 0.67807;
+  }
+  40% {
+  opacity: 0.26559;
+  }
+  45% {
+  opacity: 0.84693;
+  }
+  50% {
+  opacity: 0.96019;
+  }
+  55% {
+  opacity: 0.08594;
+  }
+  60% {
+  opacity: 0.20313;
+  }
+  65% {
+  opacity: 0.71988;
+  }
+  70% {
+  opacity: 0.53455;
+  }
+  75% {
+  opacity: 0.37288;
+  }
+  80% {
+  opacity: 0.71428;
+  }
+  85% {
+  opacity: 0.70419;
+  }
+  90% {
+  opacity: 0.7003;
+  }
+  95% {
+  opacity: 0.36108;
+  }
+  100% {
+  opacity: 0.24387;
+  }
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.25s infinite;
+}
+
+
+*/
+
+
+.floating,
+.floating:hover {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    background:none;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+
+.brand3 a.ctaButton
+    color: brand3 !important
+.brand4 a.ctaButton
+    color: brand4 !important
+.brand5 a.ctaButton
+    color: brand5 !important
+.brand6 a.ctaButton 
+    color: brand6 !important
+
+
+.blur
+    filter:blur(10px)
+
+
+
+// last in the cascade - highest prio
+.m
+    @media screen and (min-width: tBreakPoint)
+        display: $hideItAll
+.d
+    @media screen and (max-width: tBreakPoint)
+        display: $hideItAll
+
