@@ -74,46 +74,46 @@
 *
 */
 .brand0color {
-  color: #1b1464;
+  color: #1a1a1a;
 }
 .brand1color {
-  color: #2e3192;
+  color: #f2f2f2;
 }
 .brand2color {
   color: #f00;
 }
 .brand3color {
-  color: #0ff;
+  color: #05d690;
 }
 .brand4color {
-  color: #cfc;
+  color: #91e2c1;
 }
 .brand5color {
-  color: #00f89c;
+  color: #0ff;
 }
 .brand6color {
-  color: #08061f;
+  color: #1b1464;
 }
 .brand0 {
-  background-color: #1b1464;
+  background-color: #1a1a1a;
 }
 .brand1 {
-  background-color: #2e3192;
+  background-color: #f2f2f2;
 }
 .brand2 {
   background-color: #f00;
 }
 .brand3 {
-  background-color: #0ff;
+  background-color: #05d690;
 }
 .brand4 {
-  background-color: #cfc;
+  background-color: #91e2c1;
 }
 .brand5 {
-  background-color: #00f89c;
+  background-color: #0ff;
 }
 .brand6 {
-  background-color: #08061f;
+  background-color: #1b1464;
 }
 html,
 body {
@@ -125,12 +125,12 @@ body {
   font-size: 16px;
 }
 body {
-  background-color: #1b1464;
+  background-color: #1a1a1a;
   color: #fff;
 }
 hr {
   border: none;
-  border-bottom: 2px solid #2e3192;
+  border-bottom: 2px solid #f2f2f2;
   margin: 0;
 }
 hr.small {
@@ -138,7 +138,7 @@ hr.small {
   width: 100px;
 }
 .reverse hr {
-  border-bottom: 2px solid #2e3192;
+  border-bottom: 2px solid #f2f2f2;
 }
 .noPad {
   padding: 0 !important;
@@ -464,7 +464,7 @@ div.mblnavContainer {
   overflow-y: auto;
 /* Optional but highly reccomended: enables momentum scrolling on iOS */
   -webkit-overflow-scrolling: touch;
-  background-color: #1b1464;
+  background-color: #1a1a1a;
 }
 .open {
   opacity: 1 !important;
@@ -492,7 +492,7 @@ div.containMNav nav a {
   padding: 4.5vw 3vw;
   line-height: 130%;
   margin: 1px 0;
-  border-bottom: 2px solid #00f89c;
+  border-bottom: 2px solid #0ff;
 }
 @media screen and (min-width: 750px) and (max-width: 1100px) {
   div.containMNav nav a {
@@ -501,7 +501,7 @@ div.containMNav nav a {
 }
 div.containMNav a:link,
 div.containMNav a:visited {
-  color: #00f89c !important;
+  color: #0ff !important;
 }
 div.containMNav h6 {
   font-size: 1em;
@@ -568,7 +568,7 @@ main.featurette article:last-child {
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding-right: 5vw !important;
-    color: #2e3192;
+    color: #f2f2f2;
   }
 }
 @media screen and (min-width: 750px) {
@@ -600,7 +600,7 @@ a.itemLink:link,
 a.itemLink:visited {
   -webkit-transition: 0.35s;
   transition: 0.35s;
-  color: #0ff;
+  color: #05d690;
   display: block;
 }
 @media (pointer: fine) {
@@ -852,11 +852,11 @@ section.centre {
   }
 }
 div.sec2 div.container {
-  background-color: #2e3192;
+  background-color: #f2f2f2;
   margin-top: -1px;
 }
 div.sec3 div.container {
-  background-color: #2e3192;
+  background-color: #f2f2f2;
 }
 div.sec6 {
   background-color: #1a1a1a;
@@ -938,10 +938,10 @@ div.sec3 {
 .ic-basic {
   font-size: 1.4em;
   line-height: 1.4em;
-  color: #2e3192;
+  color: #f2f2f2;
 }
 .ic-basic::before {
-  color: #2e3192;
+  color: #f2f2f2;
 }
 .ic-basic.rev {
   color: #fff;
@@ -957,7 +957,7 @@ ul.iconRow li {
   margin: 0.8vw 1.8vw 0 0;
   padding: 0.8vw 1.8vw 0.8vw 0;
   display: inline-block;
-  border-right: 1px solid #2e3192;
+  border-right: 1px solid #f2f2f2;
 }
 ul.iconRow li:last-child {
   border-right: none;
@@ -1023,8 +1023,8 @@ body > footer .icon {
 }
 a.majorCTA,
 a.ctaButton {
-  color: #2e3192;
-  background-color: #2e3192;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
   padding: 0.8vw 1.875vw 0.8vw 1.875vw;
   margin-bottom: 7px;
   display: inline-block;
@@ -1037,10 +1037,10 @@ div#masthead a.majorCTA {
 }
 a.ctaButton {
   background: none;
-  color: #2e3192;
+  color: #f2f2f2;
   font-size: 1em;
   font-weight: 600;
-  border: 2px solid #2e3192;
+  border: 2px solid #f2f2f2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-box;
@@ -1055,12 +1055,12 @@ a.ctaButton {
 }
 a.ctaButton.solid {
   color: #fff;
-  background-color: #2e3192;
-  border-color: #2e3192;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 nav a.ctaButton {
   background: none;
-  color: #2e3192 !important;
+  color: #f2f2f2 !important;
   margin-left: 0.8vw;
   margin-right: 0.8vw;
   margin-bottom: 0;
@@ -1074,7 +1074,7 @@ a.ctaButton i {
   font-size: 1.1em;
 }
 a.ctaButton i:before {
-  color: #2e3192;
+  color: #f2f2f2;
 }
 a.ctaButton:hover,
 a.ctaButton:hover > i:before {
@@ -1111,7 +1111,7 @@ div.cta > div > h6 {
   border-color: #fff;
 }
 .reverse a.ctaButton.solid {
-  color: #1b1464;
+  color: #1a1a1a;
   background-color: #fff;
 }
 .reverse a.ctaButton.solid:hover {
@@ -1414,7 +1414,7 @@ img.med {
 }
 p.figureCap {
   width: auto;
-  border-left: 2px solid #2e3192;
+  border-left: 2px solid #f2f2f2;
   padding: 1.5vw 5vw 3vw 3vw;
   margin-left: 10vw;
   position: relative;
@@ -1422,7 +1422,7 @@ p.figureCap {
 }
 p.quote span {
   font-size: 80%;
-  color: #2e3192;
+  color: #f2f2f2;
   text-transform: uppercase;
 }
 @media screen and (max-width: 750px) {
@@ -1455,7 +1455,7 @@ p.quote span {
   }
 }
 div.slider {
-  background-color: #2e3192;
+  background-color: #f2f2f2;
 }
 .inpgNv {
   text-align: right;
@@ -1751,7 +1751,7 @@ ul.featureList li strong {
   display: none;
 }
 div.thirdparty-logo {
-  border: 1px solid #2e3192;
+  border: 1px solid #f2f2f2;
   background-color: rgba(0,0,0,0.05);
   padding: 0.8vw !important;
 }
@@ -1761,7 +1761,7 @@ div.thirdparty-logo {
 }
 .darkSlider div.slickSlider,
 .darkSlider div.slickSlider1 {
-  background-color: #2e3192;
+  background-color: #f2f2f2;
 }
 div.slideTextOverlay {
   position: absolute;
@@ -1781,7 +1781,7 @@ div.slideTextOverlay {
   color: #f00;
 }
 .darkSlider div.slideTextOverlay {
-  color: #2e3192;
+  color: #f2f2f2;
 }
 div.openingTitle {
   margin-left: 0;
@@ -2348,7 +2348,7 @@ div.panel.noBG {
   }
 }
 .galleryElement {
-  background-color: #1b1464;
+  background-color: #1a1a1a;
   display: block;
   width: 50vw;
   height: 30vw;
@@ -2372,7 +2372,7 @@ div.panel.noBG {
 }
 a:link,
 a:visited {
-  color: #2e3192;
+  color: #f2f2f2;
   text-decoration: none;
 }
 p a:link,
@@ -2383,7 +2383,7 @@ li a:visited {
 }
 #navHeader a:link,
 #navHeader a:visited {
-  color: #00f89c;
+  color: #0ff;
 }
 .activeLink {
   font-weight: 600 !important;
@@ -2414,8 +2414,8 @@ ul p {
   margin-top: 0;
 }
 .reverse ul {
-  border-top: 1px solid #2e3192;
-  border-bottom: 1px solid #2e3192;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 @media screen and (max-width: 750px) {
   .reverse ul {
@@ -2423,8 +2423,8 @@ ul p {
   }
 }
 .reverse li {
-  color: #cfc;
-  border-bottom: 1px solid #2e3192;
+  color: #91e2c1;
+  border-bottom: 1px solid #f2f2f2;
 }
 .reverse li strong {
   color: #fff;
@@ -2441,7 +2441,7 @@ ul.simpleGrid {
   line-height: 1.3em;
 }
 *.picturefill-background a {
-  color: #2e3192;
+  color: #f2f2f2;
 }
 @media screen and (min-width: 750px) {
   *.picturefill-background.lighten1,
@@ -2498,12 +2498,12 @@ body.lightSlider > header.fixed nav a.activeLink {
 }
 body.lightSlider > header.fixed nav a,
 body.lightSlider > header.fixed nav a.ctaButton {
-  color: #2e3192 !important;
-  border-color: #2e3192 !important;
+  color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
 }
 body.lightSlider > header.fixed nav a:hover {
   color: #f00 !important;
-  border-color: #2e3192 !important;
+  border-color: #f2f2f2 !important;
 }
 body.darkTheme > header.sticky .siteLogo span,
 body.darkTheme > header.sticky nav a.activeLink,
@@ -2520,16 +2520,16 @@ body.darkTheme > header.sticky nav a:hover {
 }
 body.lightTheme > header.sticky .siteLogo span,
 body.lightTheme > header.sticky nav a.activeLink {
-  color: #1b1464 !important;
+  color: #1a1a1a !important;
 }
 body.lightTheme > header.sticky nav a,
 body.lightTheme > header.sticky nav a.ctaButton {
-  color: #2e3192 !important;
-  border-color: #2e3192 !important;
+  color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
 }
 body.lightTheme > header.sticky nav a:hover {
-  color: #1b1464 !important;
-  border-color: #1b1464 !important;
+  color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
 }
 header.fixed nav {
   display: -webkit-box;
@@ -2631,11 +2631,11 @@ body > footer a {
   }
 }
 body > footer a.activeLink {
-  color: #1b1464 !important;
+  color: #1a1a1a !important;
 }
 @media screen and (min-width: 1100px) {
   body > footer a.activeLink {
-    border-left: 3px solid #1b1464;
+    border-left: 3px solid #1a1a1a;
     margin-left: 0.92vw;
   }
 }
@@ -2699,7 +2699,7 @@ a.siteLogo:hover {
     font-weight: 650;
     letter-spacing: -0.045em;
     text-indent: -0.08em;
-    color: #2e3192;
+    color: #f2f2f2;
   }
 }
 .darkSlide p {
@@ -2759,25 +2759,25 @@ div.sec4 a.extLink:visited {
   -webkit-text-fill-color: rgba(0,0,0,0);
 }
 .strokeBrand0 {
-  -webkit-text-stroke-color: #1b1464;
+  -webkit-text-stroke-color: #1a1a1a;
 }
 .strokeBrand1 {
-  -webkit-text-stroke-color: #2e3192;
+  -webkit-text-stroke-color: #f2f2f2;
 }
 .strokeBrand2 {
   -webkit-text-stroke-color: #f00;
 }
 .strokeBrand3 {
-  -webkit-text-stroke-color: #0ff;
+  -webkit-text-stroke-color: #05d690;
 }
 .strokeBrand4 {
-  -webkit-text-stroke-color: #cfc;
+  -webkit-text-stroke-color: #91e2c1;
 }
 .strokeBrand5 {
-  -webkit-text-stroke-color: #00f89c;
+  -webkit-text-stroke-color: #0ff;
 }
 .strokeBrand6 {
-  -webkit-text-stroke-color: #08061f;
+  -webkit-text-stroke-color: #1b1464;
 }
 @media screen and (min-width: 750px) {
   .restrictWidth {
@@ -2805,7 +2805,7 @@ div.sec4 a.extLink:visited {
   background-color: rgba(0,0,0,0.75) !important;
 }
 .multiplyBlack {
-  background-color: #2e3192;
+  background-color: #f2f2f2;
 }
 .multiplyRed {
   background-color: #f00;
@@ -2844,8 +2844,8 @@ div.sec4 a.extLink:visited {
 }
 .gradient {
   background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,121,162,0.5)), to(rgba(0,0,0,0.5)));
-  background: linear-gradient(to bottom, rgba(0,121,162,0.5), rgba(0,0,0,0.5));
+  background: -webkit-gradient(linear, left top, right top, from(#111), to(#333));
+  background: linear-gradient(to right, #111, #333);
 }
 .gradient0 {
   background-blend-mode: multiply;
@@ -2859,7 +2859,7 @@ div.sec4 a.extLink:visited {
 }
 @media screen and (max-width: 750px) {
   .gradient2 {
-    background: #08061f;
+    background: #1b1464;
   }
 }
 .gradient3 {
@@ -2868,12 +2868,12 @@ div.sec4 a.extLink:visited {
 }
 @media screen and (max-width: 750px) {
   .gradient3 {
-    background: #1b1464;
+    background: #1a1a1a;
   }
 }
 .gradient4 {
   background-blend-mode: multiply;
-  background: linear-gradient(120deg, #1b1464, #2e3192, #08061f);
+  background: linear-gradient(120deg, #1a1a1a, #f2f2f2, #1b1464);
 }
 .gradient5 {
   background-blend-mode: multiply;
@@ -2882,22 +2882,22 @@ div.sec4 a.extLink:visited {
 }
 .gradient1 {
   background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000), to(#1b1464));
-  background: linear-gradient(to top, #000 5%, #1b1464);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #000), to(#1a1a1a));
+  background: linear-gradient(to top, #000 5%, #1a1a1a);
 }
 @media screen and (max-width: 750px) {
   .gradient1 {
-    background: #1b1464;
+    background: #1a1a1a;
   }
 }
 .gradient7 {
   background-blend-mode: multiply;
-  background: -webkit-gradient(linear, left bottom, left top, from(#08061f), to(#1b1464));
-  background: linear-gradient(to top, #08061f, #1b1464);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b1464), to(#1a1a1a));
+  background: linear-gradient(to top, #1b1464, #1a1a1a);
 }
 @media screen and (max-width: 750px) {
   .gradient7 {
-    background: #1b1464;
+    background: #1a1a1a;
   }
 }
 .gradientsec2 {
@@ -2906,7 +2906,7 @@ div.sec4 a.extLink:visited {
 }
 @media screen and (max-width: 750px) {
   .gradientsec2 {
-    background: #2e3192;
+    background: #f2f2f2;
   }
 }
 .gradientsec3 {
@@ -2923,16 +2923,16 @@ div.sec4 a.extLink:visited {
   background: linear-gradient(220deg, rgba(46,46,46,0.5), rgba(0,0,0,0.1), rgba(0,0,0,0.05), rgba(0,0,0,0.05));
 }
 .brand3 a.ctaButton {
-  color: #0ff !important;
+  color: #05d690 !important;
 }
 .brand4 a.ctaButton {
-  color: #cfc !important;
+  color: #91e2c1 !important;
 }
 .brand5 a.ctaButton {
-  color: #00f89c !important;
+  color: #0ff !important;
 }
 .brand6 a.ctaButton {
-  color: #08061f !important;
+  color: #1b1464 !important;
 }
 .blur {
   -webkit-filter: blur(10px);
