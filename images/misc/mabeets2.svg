@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_5" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #05d690;
+      }
+    </style>
+  </defs>
+  <circle class="cls-3" cx="45.62" cy="86" r="24.1"/>
+  <g>
+    <line class="cls-1" x1="94.5" y1="87" x2="94.5" y2="127.92"/>
+    <polygon class="cls-2" points="90.41 124.6 91.14 123.92 94.5 127.53 97.86 123.92 98.59 124.6 94.5 129 90.41 124.6"/>
+  </g>
+  <g>
+    <line class="cls-1" x1="154.5" y1="87" x2="154.5" y2="127.92"/>
+    <polygon class="cls-2" points="150.41 124.6 151.14 123.92 154.5 127.53 157.86 123.92 158.59 124.6 154.5 129 150.41 124.6"/>
+  </g>
+  <g>
+    <line class="cls-1" x1="214.5" y1="87" x2="214.5" y2="127.92"/>
+    <polygon class="cls-2" points="210.41 124.6 211.14 123.92 214.5 127.53 217.86 123.92 218.59 124.6 214.5 129 210.41 124.6"/>
+  </g>
+  <line class="cls-1" x1="70.5" y1="86.5" x2="299.5" y2="86.5"/>
+  <g>
+    <circle cx="94.38" cy="150.53" r="20"/>
+    <circle class="cls-3" cx="94.38" cy="150.53" r="7.85"/>
+  </g>
+  <g>
+    <circle cx="154.38" cy="150.53" r="20"/>
+    <circle class="cls-3" cx="154.38" cy="150.53" r="7.85"/>
+  </g>
+  <g>
+    <circle cx="214.38" cy="150.53" r="20"/>
+    <circle class="cls-3" cx="214.38" cy="150.53" r="7.85"/>
+  </g>
+  <g>
+    <circle cx="274.38" cy="150.53" r="20"/>
+    <circle class="cls-3" cx="274.38" cy="150.53" r="7.85"/>
+  </g>
+</svg>

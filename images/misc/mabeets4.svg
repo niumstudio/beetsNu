@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_5" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #05d690;
+      }
+
+      .cls-4 {
+        opacity: .2;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M168.23,16.76h141.67v60h-141.67c-16.56,0-30-13.44-30-30h0c0-16.56,13.44-30,30-30Z"/>
+  <g>
+    <circle cx="25.74" cy="46.39" r="20.83"/>
+    <circle class="cls-3" cx="25.74" cy="46.39" r="8.18"/>
+  </g>
+  <circle class="cls-3" cx="169.57" cy="46.39" r="20.83"/>
+  <g class="cls-4">
+    <circle cx="216.24" cy="46.39" r="20.83"/>
+  </g>
+  <g class="cls-4">
+    <circle cx="262.91" cy="46.39" r="20.83"/>
+  </g>
+  <g class="cls-4">
+    <path d="M309.68,67.23c-11.51.06-20.88-9.22-20.94-20.72-.06-11.51,9.22-20.88,20.72-20.94l.22,41.67Z"/>
+  </g>
+  <g>
+    <line class="cls-1" x1="50.89" y1="47.26" x2="133.81" y2="47.26"/>
+    <polygon class="cls-2" points="130.49 51.35 129.81 50.62 133.42 47.26 129.81 43.9 130.49 43.17 134.89 47.26 130.49 51.35"/>
+  </g>
+</svg>
