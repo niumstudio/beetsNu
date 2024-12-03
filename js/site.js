@@ -56,7 +56,7 @@
                 $('header.sticky').animate({opacity: "hide"}, {queue : false, duration:250});
             }
         },
-            offset: '25%'
+            offset: '-100%'
         })
 
 
@@ -111,13 +111,11 @@
 
 
     // slideNav
-    $('#omniDrop').click(function(){
-        //$(this).hide();
-        $(this).siblings('a').toggleClass('faded');
-        $(this).find('i').toggleClass('rotateIC');
-        $('#slideNav').slideToggle();
+    $('.slideOutDrawer').hide();
+    $('.slideOutTrigger').click(function(){
+        $(this).toggleClass('faded');
+        $(this).parent().parent('.slider').find('.slideOutDrawer').slideToggle();
         return false;
-
     });
 
 
@@ -171,20 +169,90 @@
 
 
 
-    var dwidth = jQuery(window).width();
-    jQuery(window).bind('resize', function(e){
-    
-        var wwidth = jQuery(window).width();
-    
-        if(dwidth!==wwidth){
-         dwidth = jQuery(window).width();
-    
-        if (window.RT) clearTimeout(window.RT);
-        window.RT = setTimeout(function(){
-            this.location.reload(false); /* false to get page from cache */
-        }, 1000);
-    }
+
+    $('.slickSliderBG').slick({
+        fade: true,
+        pauseOnHover: false,
+        autoplay: true,
+        autoplaySpeed:2000,  
+        speed: 3000,      
+        dots: false,
+        arrows: false
     });
+    $('.slickSliderContent').slick({
+        fade: true,
+        pauseOnHover: false,
+        autoplay: true,
+        autoplaySpeed:5500,  
+        speed: 1000,      
+        dots: true,
+        arrows: false
+    });
+
+    var inview = new Waypoint.Inview({
+    element: $('#s1 .inview')[0],
+        enter: function(direction) {
+            //
+        },
+        entered: function(direction) {
+            $('.positionObj1').delay(500).animate({opacity: 0.9}, {queue : true, duration:1000});
+            $('.positionObj2').delay(700).animate({opacity: 0.9}, {queue : true, duration:1000});
+            $('.positionObj3').delay(1200).animate({opacity: 0.9}, {queue : true, duration:1000});
+        },
+        exit: function(direction) {
+            //
+        },
+        exited: function(direction) {
+            //
+        }
+    });
+
+    var inview = new Waypoint.Inview({
+    element: $('#start')[0],
+        enter: function(direction) {
+            //
+        },
+        entered: function(direction) {
+            $('.positionObj1').stop().animate({opacity: 0.0}, {queue : false, duration:500});
+            $('.positionObj2').stop().animate({opacity: 0.0}, {queue : false, duration:500});
+            $('.positionObj3').stop().animate({opacity: 0.0}, {queue : false, duration:500});
+        },
+        exit: function(direction) {
+            //
+        },
+        exited: function(direction) {
+            //
+        }
+    });
+    
+
+    var inview = new Waypoint.Inview({
+    element: $('.vaultTrigger')[0],
+        enter: function(direction) {
+            //
+        },
+        entered: function(direction) {
+            $('.vault').animate({opacity: 1.0}, {queue : false, duration:1500});
+        },
+        exit: function(direction) {
+            //$('.vault').delay(500).animate({opacity: 0.0}, {queue : false, duration:0});
+        },
+        exited: function(direction) {
+            $('.vault').stop().animate({opacity: 0.0}, {queue : false, duration:500});
+            
+        }
+    });
+
+
+    // hide all on scroll to top
+    $('#toTop').click(function(){
+        $('.vault').stop().animate({opacity: 0.0},{queue : false, duration:0});
+        return false;
+    });
+
+
+
+
 
 
 

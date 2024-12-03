@@ -13,6 +13,7 @@
 
 
 // vars
+// vars
 brand0 = rgba(26,26,26,1.0) //#1a1a1a
 brand1 = rgba(242,242,242,1.0) //#f2f2f2
 brand2 = rgba(255,0,0,1.0) //#ff0000
@@ -40,48 +41,38 @@ fantom = rgba(20,169,221,1.0) //#14A9DD
 .brand6color
     color: brand6
 
-.brand0 
+.brand0bg
     background-color: brand0
-.brand1 
+.brand1bg
     background-color: brand1
-.brand2 
+.brand2bg 
     background-color: brand2
-.brand3 
+.brand3bg 
     background-color: brand3
-.brand4 
+.brand4bg 
     background-color: brand4
-.brand5 
+.brand5bg 
     background-color: brand5
-.brand6 
+.brand6bg 
     background-color: brand6
 
-// sec1 - monotone
-sec1base = rgba(245,245,245.1.0)
-sec1mid = rgba(238,238,238,1.0)
-sec1fore = rgba(229,229,229,1.0)
-sec1dark = rgba(128,128,128,1.0)
-sec1darker = rgba(255,255,255,1.0)
 
-// sec2 - purple
-sec2base = rgba(0,0,0.1.0)
-sec2mid = rgba(255,250,250,1.0)
-sec2fore = rgba(0,0,0,1.0)
-sec2dark = rgba(192,0,0,1.0)
-sec2darker = rgba(153,100,100,0.6)
+lightmode1 = rgba(239,237,230,1.0) //#EFEDE6
+lightmode2 = rgba(226,222,215,1.0) //#E2DED7
+lightmode3 = rgba(245,243,239,1.0) //#F5F3EF
 
-// sec3 - blue
-sec3base = rgba(26,26,26,1.0)
-sec3mid = rgba(250,250,255,1.0)
-sec3fore = rgba(0,0,0,1.0)
-sec3dark = rgba(141,164,181,1.0)
-sec3darker = rgba(119,142,165,0.6)
+darkmode1 = rgba(56,62,71,1.0) //#383E47
+darkmode2 = rgba(49,55,62,1.0) //#31373E
+darkmode3 = rgba(63,71,80,1.0) //#3F4750
 
-// sec4 - green
-sec4base = rgba(238,246,237.1.0)
-sec4mid = rgba(250,250,250,1.0)
-sec4fore = rgba(221,238,219,1.0)
-sec4dark = rgba(117,117,117,1.0)
-sec4darker = rgba(46,46,46,0.5)
+darkGrey = rgba(56,62,71,1.0) //#383E47
+sand = rgba(230,210,191,1.0) //#E6D2BF
+sandDark = rgba(178,168,161,1.0) //#B2A8A1
+paleBlue = rgba(149,162,180,1.0) //#95A2B4
+lavender = rgba(182,177,244,1.0) //#B6B1F4
+red = rgba(212,76,78,1.0) //#D44C4E
+
+
 
 white = rgba(255,255,255,1.0)
 whiteAlp90 = rgba(255,255,255,0.9)
@@ -91,7 +82,7 @@ whiteAlp25 = rgba(255,255,255,0.25)
 whiteAlp15 = rgba(255,255,255,0.15)
 whiteAlp10 = rgba(255,255,255,0.1)
 whiteAlp07 = rgba(255,255,255,0.07)
-whiteAlp05 = rgba(255,255,255,0.05)
+whiteAlp04 = rgba(255,255,255,0.04)
 
 black = rgba(0,0,0,1.0)
 blackAlp90 = rgba(0,0,0,0.90)
@@ -103,9 +94,22 @@ blackAlp25 = rgba(0,0,0,0.25)
 blackAlp10 = rgba(0,0,0,0.1)
 blackAlp5 = rgba(0,0,0,0.05)
 
-halfDark = rgba(0,0,0,0.45)
-lightGrey = rgba(222,222,222,1.0)
-mainBG = rgba(245,245,245,1.0)
+.brand0color
+    color: brand0
+
+.whitebgAlp04
+    background-color: whiteAlp04
+.blackbgAlp25
+    background-color: blackAlp25
+.darkmode2bg25
+    background-color: rgba(49,55,62,0.25)
+.darkmode2bg50
+    background-color: rgba(49,55,62,0.50)
+.gradientCTA
+    background: linear-gradient(to right, #B6B1F4, #EAAA7E) 
+
+
+
 
 
 
@@ -132,7 +136,7 @@ mBreakPoint = 750px
 tBreakPoint = 1100px
 sdBreakPoint = 1200px
 dBreakPoint = 1500px
-lgBreakPoint = 2100px
+lgBreakPoint = 2000px
 
 phoneRule = "screen and (max-width: mBreakPoint )"
 tabletRule = "screen and (min-width: mBreakPoint) and (max-width: tBreakPoint )"
@@ -198,7 +202,7 @@ borderBtm = @block {
 
 // heights
 fullH = 100vh
-largeH = 85vh
+largeH = 90vh
 halfH = 50vh
 smallH = 25vh
 
@@ -219,27 +223,25 @@ body
     // background: linear-gradient(top, white, brand1)
 body
     background-color: brand0
+    background-image: url(/images/patterns/pattern-sml-7@2x.webp)
+    background-size: 20%
     color: white
-
+    @media dtrigger
+        background-attachment: fixed
+        background-size: 8%
 
 hr
     border: none
     border-bottom: 2px solid brand1
     margin:0
-
-hr.small
-    border-bottom: 3px solid brand2 !important
-    width:100px 
-.reverse hr
-    border-bottom: 2px solid brand1
+.centerMe
+    margin: 0px auto
+    text-align: center
 
 .noPad
     padding: 0 !important
-// blend modes
-
 .nowrap 
     text-wrap: nowrap
-
 .noPadBottom
     padding-bottom: 0 !important
 .noPadTop
@@ -249,38 +251,4 @@ hr.small
 .noPadLeft
     padding-left: 0 !important
 
-.bgPosBottom
-    background-position: -1px 100%
 
-
-span.spacer
-    display: block
-span.spacer5
-    height: 5vh
-span.spacer7
-    height: 7vh
-span.spacer10
-    height: 10vh
-span.spacer15
-    height: 15vh
-span.spacer20
-    height: 20vh
-span.spacer25
-    height: 25vh
-@media phoneRule
-    span.spacer7
-        height: 7vw
-    span.spacer10
-        height: 10vw
-
-.centerMe
-    margin: 0px auto
-
-.padMe
-    padding: padXS
-    @media phoneRule
-        padding: padM
-
-
-.alignEnd
-    align-self: flex-end
